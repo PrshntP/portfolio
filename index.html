@@ -1,0 +1,201 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Prashant Paudel">
+
+    <!-- IMPORTING CUSTOM STYLES. -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- ICON. -->
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIG4RZLQCCvYzUOzCLUpTWsSgLYhZJwhfxbw&s" />
+    <title>Prashant | Profile</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            color: #1e1e1e;
+        }
+        .nav {
+            background-color: #007a5c;
+        }
+        .nav-title {
+            color: #fff;
+        }
+        .nav-items a {
+            color: #ffffffe4;
+        }
+        .about-contents {
+            background-color: #e7f6f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="nav">
+        <section class="nav-contents">
+            <div class="nav-title" onclick="location.reload()">
+                &lt;PRASHANT/&gt;
+            </div>
+            <div class="nav-items" id="nav-items">
+                <a href="#about">ABOUT</a>
+                <a href="#experience">EXPERIENCE</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#awards">AWARDS & CERTIFICATIONS</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+    </nav>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <section class="about-contents">
+            <article class="about-description">
+                <h1>Prashant Paudel</h1>
+                <h3>Aspiring Content Writer</h3>
+                <p>
+                    Content writer experienced in crafting engaging, SEO-friendly content across blogs, websites, and social media. Skilled in storytelling, editing, and adapting tone for different audiences.
+                    <blockquote><strong>Skills:</strong> Content Writing, SEO, Copywriting, Editing, Blogging, Social Media, UI/UX</blockquote>
+                </p>
+            </article>
+            <div class="about-image">
+                <img src="assets/images/images.png" alt="Prashant's photo" style="width:100%; height:auto; border-radius:12px;" />
+            </div>
+        </section>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <section class="experience-contents">
+            <section id="contents-left">
+                <h2 class="contents-title">EXPERIENCE</h2>
+                <section class="experience-items">
+                    <div id="exp-1" class="active" onclick="showExp('exp-1-content')">
+                        <h3>FilmyDhadka</h3>
+                        <p>Blogger | 2023 - 2024</p>
+                    </div>
+                    <div id="exp-2" onclick="showExp('exp-2-content')">
+                        <h3>Hackathon HSMSS</h3>
+                        <p>Project | 2024</p>
+                    </div>
+                    <div id="exp-3" onclick="showExp('exp-3-content')">
+                        <h3>IT Club of HSMSS</h3>
+                        <p>Content Writer | 2023 - 2024</p>
+                    </div>
+                </section>
+            </section>
+            <section id="exp-contents-right">
+                <div id="exp-1-content">
+                    <h2>FilmyJhadka</h2>
+                    <i>Blogger | 2023 - 2024</i>
+                    <hr />
+                    <p>
+                        Written a lot of blog post and created a tons of engaging web stories.
+                    </p>
+                </div>
+                <div id="exp-2-content" style="display: none;">
+                    <h2>Hackathon HSMSS</h2>
+                    <i>Project | 2024</i>
+                    <hr />
+                    <p>
+                        Developed an interactive solution for a smart college problem with team.
+                    </p>
+                </div>
+                <div id="exp-3-content" style="display: none;">
+                    <h2>IT Club of HSMSS</h2>
+                    <i>Content Writer | 2023 - 2024</i>
+                    <hr />
+                    <p>
+                        Served as a content writer to create vibrant presence in social media.
+                    </p>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <section class="projects-contents">
+            <h2 class="contents-title">PROJECTS</h2>
+            <section class="project-items">
+                <div id="project-1">
+                    <h2>Tourism</h2>
+                    <blockquote>Project | 2024</blockquote>
+                    <p>
+                        Written a amazing blog post on the topic “Tourism in Nepal” with proper SEO.
+                    </p>
+                    <p><a href="#">Link</a></p>
+                </div>
+                <div id="project-2">
+                    <h2>AI</h2>
+                    <blockquote>Project | 2024</blockquote>
+                    <p>
+                        Created a SEO friendly web story on the topic “AI”.
+                    </p>
+                    <p><a href="#">Link</a></p>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <!-- AWARDS & CERTIFICATIONS -->
+    <section id="awards">
+        <section class="awards-contents">
+            <section id="contents-left">
+                <h2 class="contents-title">AWARDS & CERTIFICATIONS</h2>
+                <section class="awards-items">
+                    <div id="awards-1" class="active" onclick="showAwards('awards-1-content')">
+                        <h3>WordPress Workshop</h3>
+                        <p>SkillLabs | 2024</p>
+                    </div>
+                </section>
+            </section>
+            <section id="awards-contents-right">
+                <div id="awards-1-content">
+                    <h2>WordPress Workshop</h2>
+                    <i>HSMSS | 2024</i>
+                    <hr />
+                    <p>
+                        Received a certificate upon completing the 10 days Wordpress course on SkillLabs.
+                    </p>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <!-- FOOTER/CONTACT -->
+    <footer id="contact">
+        <section class="contact-contents">
+            <div class="contact-links">
+                <h3>LINKS</h3>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#awards">Awards & Certifications</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="contact-connect">
+                <h3>CONNECT</h3>
+                <a href="https://github.com/PrshntP">Github</a>
+                <a href="https://www.linkedin.com/in/prashant-paudel-43361828b/">LinkedIn</a>
+            </div>
+            <div>
+                <h3>CONTACT</h3>
+                <a href="tel:+9779767115633">+977 9767115633</a><br>
+                <a href="mailto:prashant616@gmail.com">pprashant6169@gmail.com</a><br>
+                <a href="#">Hetauda, Nepal</a>
+            </div>
+        </section>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
